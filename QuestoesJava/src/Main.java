@@ -1,15 +1,60 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Scanner;
+public class Questao {
+    public static void main (String args[]){
+        System.out.println("UNIFAN - Centro Universitário Alfredo Nasser");
+        System.out.println("Aluno: Gustavo Augusto Oliveira Vitor");
+        System.out.println("Professor: Brenno Pimenta");
+        System.out.println("Seja bem vindo, ao quiz de perguntas e respostas sobre Dark Souls 3");
+    }
+    String pergunta = "";
+    String opcaoA = "";
+    String opcaoB = "";
+    String opcaoC = "";
+    String opcaoD = "";
+    String opcaoE = "";
+    String correta = "";
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+    public boolean isCorreta(String resposta){
+        if(resposta.equalsIgnoreCase(this.correta)){
+            System.out.println("Parabéns resposta Correta! - Letra: " + this.correta);
+            System.out.println("");
+            return true;
+        } else {
+            System.out.println("Resposta Errada!");
+            System.out.println("A opção correta é a letra: " + this.correta);
+            System.out.println("");
+            return false;
         }
+    }
+
+    public String leiaResposta() {
+        Scanner ler = new Scanner(System.in);
+        String resp;
+        do {
+            System.out.println("Digite a resposta: ");
+            resp = ler.next();
+        } while (!respostaValida(resp));
+        return resp;
+    }
+
+    private boolean respostaValida(String resp){
+        if(resp.equalsIgnoreCase("A") || resp.equalsIgnoreCase("B") || resp.equalsIgnoreCase("C") ||
+                resp.equalsIgnoreCase("D") || resp.equalsIgnoreCase("E")){
+            return true;
+        }
+        System.out.println("Resposta inválida! Digite opção A, B, C, D ou E. ");
+        System.out.println("");
+        return false;
+    }
+
+    public void escrevaQuestao(){
+        System.out.println(this.pergunta);
+        System.out.println();
+        System.out.println(this.opcaoA);
+        System.out.println(this.opcaoB);
+        System.out.println(this.opcaoC);
+        System.out.println(this.opcaoD);
+        System.out.println(this.opcaoE);
+        System.out.println();
     }
 }
