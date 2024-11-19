@@ -53,10 +53,42 @@ public class Main {
             System.out.println();
         }
     }
-}
-public static void main(String[] args) {
+
+    public static void main(String[] args) {
     System.out.println("UNIFAN - Centro Universitário Alfredo Nasser");
     System.out.println("Aluno: Gustavo Augusto Oliveira Vitor");
     System.out.println("Professor: Brenno Pimenta");
     System.out.println("Seja bem-vindo ao quiz de perguntas e respostas sobre Dark Souls 3!");
     System.out.println("Responda as 15 perguntas a seguir:");
+
+        Questao[] questoes = new Questao[15];
+
+        // Questão 1
+        questoes[0] = new Questao();
+        questoes[0].pergunta = "Qual é o nome do protagonista silencioso de Dark Souls 3?";
+        questoes[0].opcaoA = "A) Guardião do Fogo";
+        questoes[0].opcaoB = "B) Peregrino Solitário";
+        questoes[0].opcaoC = "C) Ashen One";
+        questoes[0].opcaoD = "D) Escolhido dos Mortos-Vivos";
+        questoes[0].opcaoE = "E) Incendiário";
+        questoes[0].correta = "C";
+
+        // Questão 2
+        questoes[1] = new Questao();
+        questoes[1].pergunta = "Qual chefe é necessário derrotar para entrar na cidade de Irithyll do Vale Boreal?";
+        questoes[1].opcaoA = "A) Dancer of the Boreal Valley";
+        questoes[1].opcaoB = "B) Vordt of the Boreal Valley";
+        questoes[1].opcaoC = "C) Pontífice Sulyvahn";
+        questoes[1].opcaoD = "D) Aldrich, Devourer of Gods";
+        questoes[1].opcaoE = "E) Yhorm the Giant";
+        questoes[1].correta = "B";
+
+        // Questão 3
+        questoes[2] = new Questao();
+        questoes[2].pergunta = "Qual é o nome do ferreiro que reforça suas armas em Dark Souls 3?";
+        questoes[2].opcaoA = "A) Patches";
+        questoes[2].opcaoB = "B) Gundyr";
+        questoes[2].opcaoC = "C) Hawkeye";
+        questoes[2].opcaoD = "D) Andre";
+        questoes[2].opcaoE = "E) Siegmeyer";
+        questoes[2].correta = "D";
