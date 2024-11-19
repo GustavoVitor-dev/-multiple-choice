@@ -142,3 +142,53 @@ public class Main {
         questoes[7].opcaoD = "D) Dancer of the Boreal Valley";
         questoes[7].opcaoE = "E) Lothric";
         questoes[7].correta = "A";
+
+        // Questão 9
+        questoes[8] = new Questao();
+        questoes[8].pergunta = "Qual é o título do personagem Yhorm?";
+        questoes[8].opcaoA = "A) O Rei Sem Nome";
+        questoes[8].opcaoB = "B) O Gigante";
+        questoes[8].opcaoC = "C) O Devorador de Deuses";
+        questoes[8].opcaoD = "D) O Ashen One";
+        questoes[8].opcaoE = "E) O Caçador de Dragões";
+        questoes[8].correta = "B";
+
+        // Questão 10
+        questoes[9] = new Questao();
+        questoes[9].pergunta = "Quem é o mentor do Santuário de Firelink?";
+        questoes[9].opcaoA = "A) O Rei Sem Nome";
+        questoes[9].opcaoB = "B) A Fire Keeper";
+        questoes[9].opcaoC = "C) Andre";
+        questoes[9].opcaoD = "D) Hawkwood";
+        questoes[9].opcaoE = "E) O Lorde das Cinzas";
+        questoes[9].correta = "B";
+
+        // Questão 11
+        questoes[10] = new Questao();
+        questoes[10].pergunta = "Quem é conhecido como o 'Rei Sem Nome'?";
+        questoes[10].opcaoA = "A) O Gigante";
+        questoes[10].opcaoB = "B) Lothric";
+        questoes[10].opcaoC = "C) Nameless King";
+        questoes[10].opcaoD = "D) Solaire";
+        questoes[10].opcaoE = "E) Gwyndolin";
+        questoes[10].correta = "C";
+
+        // Questão 12
+        questoes[11] = new Questao();
+        questoes[11].pergunta = "Qual é o nome do mago louco encontrado na Biblioteca de Cristal?";
+        questoes[11].opcaoA = "A) Aldia";
+        questoes[11].opcaoB = "B) Seath the Scaleless";
+        questoes[11].opcaoC = "C) Logan";
+        questoes[11].opcaoD = "D) Orbeck";
+        questoes[11].opcaoE = "E) Griggs";
+        questoes[11].correta = "D";
+
+        // Questão 13
+        questoes[12] = new Questao();
+        questoes[12].pergunta = "Quem fundou a Igreja Negra de Londor?";
+        questoes[12].opcaoA = "A) Yuria";
+        questoes[12].opcaoB = "B) Karla";
+        questoes[12].opcaoC = "C) Irina";
+        questoes[12].opcaoD = "D) Anri";
+        questoes[12].opcaoE = "E) Eygon";
+        questoes[12].correta = "A";
