@@ -92,3 +92,53 @@ public class Main {
         questoes[2].opcaoD = "D) Andre";
         questoes[2].opcaoE = "E) Siegmeyer";
         questoes[2].correta = "D";
+
+        // Questão 4
+        questoes[3] = new Questao();
+        questoes[3].pergunta = "Quem é o chefe final de Dark Souls 3?";
+        questoes[3].opcaoA = "A) Soul of Cinder";
+        questoes[3].opcaoB = "B) Nameless King";
+        questoes[3].opcaoC = "C) Aldrich";
+        questoes[3].opcaoD = "D) Lothric";
+        questoes[3].opcaoE = "E) Yhorm";
+        questoes[3].correta = "A";
+
+        // Questão 5
+        questoes[4] = new Questao();
+        questoes[4].pergunta = "Qual é o local onde o jogador renasce após morrer?";
+        questoes[4].opcaoA = "A) Santuário de Firelink";
+        questoes[4].opcaoB = "B) Templo das Chamas";
+        questoes[4].opcaoC = "C) Castelo de Lothric";
+        questoes[4].opcaoD = "D) Lago de Cinzas";
+        questoes[4].opcaoE = "E) Refúgio das Chamas";
+        questoes[4].correta = "A";
+
+        // Questão 6
+        questoes[5] = new Questao();
+        questoes[5].pergunta = "Qual é o nome do cavaleiro que ajuda o jogador durante a história?";
+        questoes[5].opcaoA = "A) Siegward de Catarina";
+        questoes[5].opcaoB = "B) Alva, Cavaleiro Errante";
+        questoes[5].opcaoC = "C) Hawkwood";
+        questoes[5].opcaoD = "D) Lothric";
+        questoes[5].opcaoE = "E) Greirat";
+        questoes[5].correta = "A";
+
+        // Questão 7
+        questoes[6] = new Questao();
+        questoes[6].pergunta = "Qual é o nome do dragão encontrado no Pico dos Dragões Antigos?";
+        questoes[6].opcaoA = "A) Darkeater Midir";
+        questoes[6].opcaoB = "B) Sinh";
+        questoes[6].opcaoC = "C) Kalameet";
+        questoes[6].opcaoD = "D) Ancient Wyvern";
+        questoes[6].opcaoE = "E) Oceiros";
+        questoes[6].correta = "D";
+
+        // Questão 8
+        questoes[7] = new Questao();
+        questoes[7].pergunta = "Quem é o chefe conhecido como o Devorador de Deuses?";
+        questoes[7].opcaoA = "A) Aldrich";
+        questoes[7].opcaoB = "B) Pontífice Sulyvahn";
+        questoes[7].opcaoC = "C) Yhorm";
+        questoes[7].opcaoD = "D) Dancer of the Boreal Valley";
+        questoes[7].opcaoE = "E) Lothric";
+        questoes[7].correta = "A";
