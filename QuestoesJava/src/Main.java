@@ -192,3 +192,23 @@ public class Main {
         questoes[12].opcaoD = "D) Anri";
         questoes[12].opcaoE = "E) Eygon";
         questoes[12].correta = "A";
+
+        // Questão 14
+        questoes[13] = new Questao();
+        questoes[13].pergunta = "Qual chefe é responsável pelo controle da Catedral das Profundezas?";
+        questoes[13].opcaoA = "A) Pontífice Sulyvahn";
+        questoes[13].opcaoB = "B) Os Gigantes";
+        questoes[13].opcaoC = "C) Deacons of the Deep";
+        questoes[13].opcaoD = "D) Vordt";
+        questoes[13].opcaoE = "E) Aldrich";
+        questoes[13].correta = "C";
+
+        // Questão 15
+        questoes[14] = new Questao();
+        questoes[14].pergunta = "Qual local é conhecido como o Reino dos Dragões Antigos?";
+        questoes[14].opcaoA = "A) Lothric";
+        questoes[14].opcaoB = "B) Archdragon Peak";
+        questoes[14].opcaoC = "C) Anor Londo";
+        questoes[14].opcaoD = "D) Profaned Capital";
+        questoes[14].opcaoE = "E) Irithyll";
+        questoes[14].correta = "B";
