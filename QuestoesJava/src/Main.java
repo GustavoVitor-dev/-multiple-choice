@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class Main {
+    // Classe interna que representa uma questão do quiz
     static class Questao {
+        // Atributos para armazenar a pergunta, opções de resposta e a resposta correta
         String pergunta = "";
         String opcaoA = "";
         String opcaoB = "";
@@ -10,6 +12,7 @@ public class Main {
         String opcaoE = "";
         String correta = "";
 
+        // Verifica se a resposta do usuário está correta
         public boolean isCorreta(String resposta) {
             if (resposta.equalsIgnoreCase(this.correta)) {
                 System.out.println("Parabéns, resposta Correta! - Letra: " + this.correta);
@@ -23,16 +26,18 @@ public class Main {
             }
         }
 
+        // Lê a resposta do usuário e valida a entrada
         public String leiaResposta() {
             Scanner ler = new Scanner(System.in);
             String resp;
             do {
                 System.out.print("Digite a resposta: ");
-                resp = ler.next();
-            } while (!respostaValida(resp));
+                resp = ler.next(); // Captura a resposta do usuário
+            } while (!respostaValida(resp)); // Garante que a resposta é válida (A, B, C, D ou E)
             return resp;
         }
 
+        // Valida se a resposta do usuário está dentro das opções permitidas
         private boolean respostaValida(String resp) {
             if (resp.equalsIgnoreCase("A") || resp.equalsIgnoreCase("B") || resp.equalsIgnoreCase("C") ||
                     resp.equalsIgnoreCase("D") || resp.equalsIgnoreCase("E")) {
@@ -43,6 +48,7 @@ public class Main {
             return false;
         }
 
+        // Exibe a pergunta e as opções de resposta
         public void escrevaQuestao() {
             System.out.println(this.pergunta);
             System.out.println(this.opcaoA);
@@ -61,8 +67,10 @@ public class Main {
     System.out.println("Seja bem-vindo ao quiz de perguntas e respostas sobre Dark Souls 3!");
     System.out.println("Responda as 15 perguntas a seguir:");
 
+        // Cria um array para armazenar 15 objetos de Questao
         Questao[] questoes = new Questao[15];
 
+        // Bloco para inicializar cada questão com pergunta, opções e resposta correta
         // Questão 1
         questoes[0] = new Questao();
         questoes[0].pergunta = "Qual é o nome do protagonista silencioso de Dark Souls 3?";
@@ -213,20 +221,24 @@ public class Main {
         questoes[14].opcaoE = "E) Irithyll";
         questoes[14].correta = "B";
 
+        // Variável para contar o número de acertos
         int acertos = 0;
+        // Loop para iterar por todas as questões
         for (int i = 0; i < questoes.length; i++) {
-            System.out.println("Questão " + (i + 1) + ":");
-            questoes[i].escrevaQuestao();
-            String resposta = questoes[i].leiaResposta();
-            if (questoes[i].isCorreta(resposta)) {
-                acertos++;
+            System.out.println("Questão " + (i + 1) + ":"); // Exibe o número da questão
+            questoes[i].escrevaQuestao(); // Exibe a pergunta e as opções
+            String resposta = questoes[i].leiaResposta(); // Lê a resposta do usuário
+            if (questoes[i].isCorreta(resposta)) { // Verifica se está correta
+                acertos++; // Incrementa o contador de acertos se a resposta estiver correta
             }
         }
 
         // Resultado final
+        // Calcula o número de erros e a porcentagem de acertos
         int erros = questoes.length - acertos;
         double porcentagem = ((double) acertos / questoes.length) * 100;
 
+        // Exibe os resultados finais do quiz
         System.out.println("Fim do Quiz!");
         System.out.println("Você acertou " + acertos + " questões e errou " + erros + " questões.");
         System.out.println("Porcentagem de acertos: " + porcentagem + "%");
