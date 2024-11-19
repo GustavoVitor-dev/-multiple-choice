@@ -212,3 +212,23 @@ public class Main {
         questoes[14].opcaoD = "D) Profaned Capital";
         questoes[14].opcaoE = "E) Irithyll";
         questoes[14].correta = "B";
+
+        int acertos = 0;
+        for (int i = 0; i < questoes.length; i++) {
+            System.out.println("Questão " + (i + 1) + ":");
+            questoes[i].escrevaQuestao();
+            String resposta = questoes[i].leiaResposta();
+            if (questoes[i].isCorreta(resposta)) {
+                acertos++;
+            }
+        }
+
+        // Resultado final
+        int erros = questoes.length - acertos;
+        double porcentagem = ((double) acertos / questoes.length) * 100;
+
+        System.out.println("Fim do Quiz!");
+        System.out.println("Você acertou " + acertos + " questões e errou " + erros + " questões.");
+        System.out.println("Porcentagem de acertos: " + porcentagem + "%");
+    }
+}
